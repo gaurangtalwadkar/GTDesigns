@@ -1,0 +1,20 @@
+#Mac
+.DS_Store
+
+#Xcode
+*.swp
+*.lock
+xcuserdata/
+DerivedData/
+*.xcuserdatad
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+
+#Generated files
+build/*
+
+#Backup files
+*~.nib
