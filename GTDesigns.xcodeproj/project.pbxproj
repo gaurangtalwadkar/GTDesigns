@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8618BE431B56726300CDA356 /* GTSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618BE421B56726300CDA356 /* GTSegmentedControl.swift */; };
 		862AD7271B453CFB000FB53C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862AD7261B453CFB000FB53C /* AppDelegate.swift */; };
 		862AD7291B453CFB000FB53C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862AD7281B453CFB000FB53C /* ViewController.swift */; };
 		862AD72C1B453CFB000FB53C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862AD72A1B453CFB000FB53C /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8618BE421B56726300CDA356 /* GTSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GTSegmentedControl.swift; path = GTControls/GTSegmentedControl.swift; sourceTree = "<group>"; };
 		862AD7211B453CFB000FB53C /* GTDesigns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTDesigns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		862AD7251B453CFB000FB53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		862AD7261B453CFB000FB53C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		862AD7461B453F17000FB53C /* GTControls */ = {
 			isa = PBXGroup;
 			children = (
+				8618BE421B56726300CDA356 /* GTSegmentedControl.swift */,
 			);
 			name = GTControls;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				862AD7291B453CFB000FB53C /* ViewController.swift in Sources */,
+				8618BE431B56726300CDA356 /* GTSegmentedControl.swift in Sources */,
 				862AD74B1B4542D3000FB53C /* Bricks.swift in Sources */,
 				86D89FA71B457B8B00B8A509 /* Dots.swift in Sources */,
 				862AD7271B453CFB000FB53C /* AppDelegate.swift in Sources */,

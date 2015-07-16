@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  GTDesigns
 //
-//  Created by Zensar on 02/07/15.
+//  Created by Gaurang Talwadkar on 02/07/15.
 //  Copyright (c) 2015 Droid Master G Entertainment. All rights reserved.
 //
 

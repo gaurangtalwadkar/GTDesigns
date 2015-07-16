@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -16,26 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z13-ae-RKe" customClass="Honeycomb" customModule="GTDesigns" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="size">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundFillColor">
-                                        <color key="value" white="0.12089120370000001" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BK5-Wr-1Cs" customClass="Bricks" customModule="GTDesigns" customModuleProvider="target">
-                                <rect key="frame" x="300" y="0.0" width="300" height="300"/>
+                                <rect key="frame" x="0.0" y="200" width="600" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="size">
@@ -53,7 +35,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3V-5H-SqZ" customClass="Honeycomb" customModule="GTDesigns" customModuleProvider="target">
-                                <rect key="frame" x="300" y="300" width="300" height="300"/>
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="size">
@@ -71,7 +53,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gci-vy-53l" customClass="Bricks" customModule="GTDesigns" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="300" width="300" height="300"/>
+                                <rect key="frame" x="0.0" y="400" width="600" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
@@ -83,7 +65,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRJ-jb-uN6" customClass="Dots" customModule="GTDesigns" customModuleProvider="target">
-                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <rect key="frame" x="0.0" y="300" width="600" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="dotRadius">
@@ -96,39 +78,78 @@
                                         <color key="value" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBC-YI-Xl7" customClass="GTSegmentedControl" customModule="GTDesigns" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="600" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7pt-Ad-LRz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
                                         <color key="value" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedLabelColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLabelColor">
+                                        <color key="value" red="0.1019607843" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z13-ae-RKe" customClass="Honeycomb" customModule="GTDesigns" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="100" width="600" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundFillColor">
+                                        <color key="value" white="0.12089120370000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D3V-5H-SqZ" secondAttribute="bottom" id="113-5a-cup"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gci-vy-53l" secondAttribute="bottom" id="1Je-jA-LMi"/>
-                            <constraint firstAttribute="centerX" secondItem="QRJ-jb-uN6" secondAttribute="centerX" id="9bZ-Yt-ib4"/>
-                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="height" secondItem="gci-vy-53l" secondAttribute="height" id="A14-B3-K1k"/>
-                            <constraint firstItem="gci-vy-53l" firstAttribute="top" secondItem="Z13-ae-RKe" secondAttribute="bottom" id="Ag6-pR-7lV"/>
-                            <constraint firstItem="gci-vy-53l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BNX-im-qRV"/>
-                            <constraint firstItem="BK5-Wr-1Cs" firstAttribute="leading" secondItem="Z13-ae-RKe" secondAttribute="trailing" id="BvU-El-fEx"/>
-                            <constraint firstItem="QRJ-jb-uN6" firstAttribute="height" secondItem="Z13-ae-RKe" secondAttribute="height" id="DEC-Tp-H6E"/>
-                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="width" secondItem="BK5-Wr-1Cs" secondAttribute="width" id="ENI-po-4U5"/>
-                            <constraint firstAttribute="trailing" secondItem="D3V-5H-SqZ" secondAttribute="trailing" id="FCA-e0-Dzb"/>
-                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="top" secondItem="BK5-Wr-1Cs" secondAttribute="bottom" id="MfC-hB-h6W"/>
-                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="leading" secondItem="gci-vy-53l" secondAttribute="trailing" id="Og6-iw-uSR"/>
-                            <constraint firstItem="BK5-Wr-1Cs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UQD-2X-Jcd"/>
-                            <constraint firstAttribute="centerY" secondItem="QRJ-jb-uN6" secondAttribute="centerY" id="WYI-JL-BSS"/>
-                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="leading" secondItem="gci-vy-53l" secondAttribute="trailing" id="XLc-Cl-4yJ"/>
-                            <constraint firstItem="Z13-ae-RKe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZBE-rS-uwH"/>
-                            <constraint firstItem="Z13-ae-RKe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cBZ-pO-nvS"/>
-                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="height" secondItem="Z13-ae-RKe" secondAttribute="height" id="cPJ-cH-bDE"/>
-                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="width" secondItem="gci-vy-53l" secondAttribute="width" id="drz-wV-vlg"/>
-                            <constraint firstItem="QRJ-jb-uN6" firstAttribute="width" secondItem="Z13-ae-RKe" secondAttribute="width" id="lxf-wo-7VC"/>
-                            <constraint firstItem="BK5-Wr-1Cs" firstAttribute="leading" secondItem="Z13-ae-RKe" secondAttribute="trailing" id="n6n-AO-mjX"/>
-                            <constraint firstItem="gci-vy-53l" firstAttribute="top" secondItem="Z13-ae-RKe" secondAttribute="bottom" id="rcj-mC-JTx"/>
-                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="top" secondItem="BK5-Wr-1Cs" secondAttribute="bottom" id="tmn-3p-h0g"/>
-                            <constraint firstAttribute="trailing" secondItem="BK5-Wr-1Cs" secondAttribute="trailing" id="tpJ-PL-3Jg"/>
-                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="height" secondItem="BK5-Wr-1Cs" secondAttribute="height" id="wCD-R0-eEy"/>
-                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="width" secondItem="Z13-ae-RKe" secondAttribute="width" id="wHB-Qz-x10"/>
+                            <constraint firstItem="Z13-ae-RKe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="2RN-bt-gJ4"/>
+                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="top" secondItem="gci-vy-53l" secondAttribute="bottom" id="2zy-iO-Ge6"/>
+                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="top" secondItem="gci-vy-53l" secondAttribute="bottom" id="4sW-Za-IA2"/>
+                            <constraint firstAttribute="trailing" secondItem="dBC-YI-Xl7" secondAttribute="trailing" id="9yP-m8-3x0"/>
+                            <constraint firstAttribute="trailing" secondItem="gci-vy-53l" secondAttribute="trailing" id="Gaj-zw-e2O"/>
+                            <constraint firstItem="QRJ-jb-uN6" firstAttribute="top" secondItem="BK5-Wr-1Cs" secondAttribute="bottom" id="HiH-PF-M4s"/>
+                            <constraint firstItem="D3V-5H-SqZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="K42-EP-wvc"/>
+                            <constraint firstAttribute="trailing" secondItem="Z13-ae-RKe" secondAttribute="trailing" id="Krd-2q-38m"/>
+                            <constraint firstItem="Z13-ae-RKe" firstAttribute="height" secondItem="BK5-Wr-1Cs" secondAttribute="height" id="Mv0-yf-HjQ"/>
+                            <constraint firstAttribute="trailing" secondItem="QRJ-jb-uN6" secondAttribute="trailing" id="OJu-di-VzG"/>
+                            <constraint firstAttribute="trailing" secondItem="BK5-Wr-1Cs" secondAttribute="trailing" id="P7c-xw-VEb"/>
+                            <constraint firstItem="gci-vy-53l" firstAttribute="top" secondItem="QRJ-jb-uN6" secondAttribute="bottom" id="QBQ-rK-3nA"/>
+                            <constraint firstItem="gci-vy-53l" firstAttribute="top" secondItem="QRJ-jb-uN6" secondAttribute="bottom" id="Shg-jh-6yw"/>
+                            <constraint firstAttribute="trailing" secondItem="D3V-5H-SqZ" secondAttribute="trailing" id="TQD-Kx-OjH"/>
+                            <constraint firstItem="Z13-ae-RKe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wwe-AD-oA7"/>
+                            <constraint firstItem="Z13-ae-RKe" firstAttribute="height" secondItem="gci-vy-53l" secondAttribute="height" id="eIW-vV-pfw"/>
+                            <constraint firstItem="dBC-YI-Xl7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="g4K-nK-u6w"/>
+                            <constraint firstItem="dBC-YI-Xl7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hcA-X4-m2h"/>
+                            <constraint firstItem="Z13-ae-RKe" firstAttribute="height" secondItem="D3V-5H-SqZ" secondAttribute="height" id="iW3-3d-OyR"/>
+                            <constraint firstItem="QRJ-jb-uN6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ok2-Il-luQ"/>
+                            <constraint firstItem="BK5-Wr-1Cs" firstAttribute="top" secondItem="Z13-ae-RKe" secondAttribute="bottom" id="qat-vV-iaf"/>
+                            <constraint firstItem="Z13-ae-RKe" firstAttribute="height" secondItem="QRJ-jb-uN6" secondAttribute="height" id="qxE-t9-UMO"/>
+                            <constraint firstItem="BK5-Wr-1Cs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="t3z-Ut-rgb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D3V-5H-SqZ" secondAttribute="bottom" id="tHk-J0-jSI"/>
+                            <constraint firstItem="QRJ-jb-uN6" firstAttribute="top" secondItem="BK5-Wr-1Cs" secondAttribute="bottom" id="vAf-RN-dTw"/>
+                            <constraint firstItem="gci-vy-53l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vTS-ES-GTq"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundFillColor">
