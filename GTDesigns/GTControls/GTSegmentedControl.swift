@@ -13,20 +13,21 @@ import UIKit
     private var labels = [UILabel]()
     var thumbView = UIView()
     
-    @IBInspectable var bgColor : UIColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 1.0) {
+    @IBInspectable var bgColor : UIColor = UIColor.clearColor() {
         didSet {
             self.backgroundColor = bgColor
         }
     }
     
-    var segments: [String] = ["Segment 1", "Segment 2"] {
+    var segments: [String] = ["Segment 1", "Segment 2", "Segment 3"] {
         didSet {
             setupLabels()
         }
     }
     
-    var selectedIndex : Int = 0 {
+    @IBInspectable var selectedIndex : Int = 0 {
         didSet {
+            self.selectedIndex = max(0, min(segments.count - 1, self.selectedIndex))
             displayNewSelectedIndex()
         }
     }
@@ -49,9 +50,28 @@ import UIKit
         }
     }
     
-    @IBInspectable var font : UIFont! = UIFont(name: "Avenir Next", size: 12) {
+    var font : UIFont! = UIFont(name: "Avenir Next", size: 12) {
         didSet {
             setFont()
+        }
+    }
+    
+    @IBInspectable var thumbSelectorColor : UIColor = UIColor(red: 180.0/255.0, green: 235.0/255.0, blue: 1.0, alpha: 1.0) {
+        didSet {
+            setupThumbView()
+        }
+    }
+    
+    @IBInspectable var thumbSelectorHeight : CGFloat = 2 {
+        didSet {
+            self.thumbSelectorHeight = max(2, min(4, self.thumbSelectorHeight))
+            setupThumbView()
+        }
+    }
+    
+    @IBInspectable var topSelector : Bool = false {
+        didSet {
+            setupThumbView()
         }
     }
     
@@ -91,10 +111,18 @@ import UIKit
         selectFrame.size.width = thumbWidth
         thumbView.frame = selectFrame
         thumbView.backgroundColor = thumbColor
+        for view in (thumbView.subviews as! [UIView]) {
+            view.removeFromSuperview()
+        }
         
         var thumbSelector = UIView()
-        thumbSelector.frame = CGRectMake(CGRectGetMinX(selectFrame), CGRectGetMaxY(selectFrame) - 2, CGRectGetWidth(selectFrame), 2)
-        thumbSelector.backgroundColor = UIColor.cyanColor()
+        
+        if (topSelector == true) {
+            thumbSelector.frame = CGRectMake(CGRectGetMinX(selectFrame), 0, CGRectGetWidth(selectFrame), thumbSelectorHeight)
+        } else {
+            thumbSelector.frame = CGRectMake(CGRectGetMinX(selectFrame), CGRectGetMaxY(selectFrame) - thumbSelectorHeight, CGRectGetWidth(selectFrame), thumbSelectorHeight)
+        }
+        thumbSelector.backgroundColor = thumbSelectorColor
         thumbView.addSubview(thumbSelector)
     }
     
