@@ -2,6 +2,11 @@
 
 Implementation of customizable patterns and controls using IBDesignable and IBInspectable.
 
+##Controls
+
+###GTSegmentedControl
+![alt tag](https://www.dropbox.com/s/datdg9k5ns29gi9/GTSegmentedControl.png?dl=1)
+
 ##Patterns
 
 ###Honeycomb
