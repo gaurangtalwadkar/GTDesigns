@@ -31,7 +31,7 @@ import Darwin
         CGContextSetFillColorWithColor(context, fillColor.CGColor)
         CGContextFillRect(context, rect)
         
-        var patternSize: CGSize = CGSizeMake(dotRadius * 2 + dotGap, dotRadius * 2 + dotGap)
+        let patternSize: CGSize = CGSizeMake(dotRadius * 2 + dotGap, dotRadius * 2 + dotGap)
         
         UIGraphicsBeginImageContextWithOptions(patternSize, true, 0.0)
         let drawingContext = UIGraphicsGetCurrentContext()

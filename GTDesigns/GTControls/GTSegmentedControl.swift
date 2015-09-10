@@ -81,7 +81,7 @@ import UIKit
         setupView()
     }
     
-    required init(coder: NSCoder) {
+    required init?(coder: NSCoder) {
         super.init(coder: coder)
         
         setupView()
@@ -111,11 +111,11 @@ import UIKit
         selectFrame.size.width = thumbWidth
         thumbView.frame = selectFrame
         thumbView.backgroundColor = thumbColor
-        for view in (thumbView.subviews as! [UIView]) {
+        for view in (thumbView.subviews ) {
             view.removeFromSuperview()
         }
         
-        var thumbSelector = UIView()
+        let thumbSelector = UIView()
         
         if (topSelector == true) {
             thumbSelector.frame = CGRectMake(CGRectGetMinX(selectFrame), 0, CGRectGetWidth(selectFrame), thumbSelectorHeight)
@@ -126,11 +126,11 @@ import UIKit
         thumbView.addSubview(thumbSelector)
     }
     
-    override func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent) -> Bool {
+    override func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
         let location = touch.locationInView(self)
         
         var calculatedIndex : Int?
-        for (index, item) in enumerate(labels) {
+        for (index, item) in labels.enumerate() {
             if item.frame.contains(location) {
                 calculatedIndex = index
             }
@@ -145,14 +145,14 @@ import UIKit
     }
     
     func displayNewSelectedIndex() {
-        for (index, item) in enumerate(labels) {
+        for (index, item) in labels.enumerate() {
             item.textColor = unselectedLabelColor
         }
         
-        var label = labels[selectedIndex]
+        let label = labels[selectedIndex]
         label.textColor = selectedLabelColor
         
-        UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: nil, animations:{
+        UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: [], animations:{
             self.thumbView.frame = label.frame
             }, completion: nil)
     }
@@ -171,7 +171,7 @@ import UIKit
             label.textAlignment = .Center
             label.font = UIFont(name: "Avenir Next", size: 15)
             label.textColor = index == 1 ? selectedLabelColor : unselectedLabelColor
-            label.setTranslatesAutoresizingMaskIntoConstraints(false)
+            label.translatesAutoresizingMaskIntoConstraints = false
             self.addSubview(label)
             labels.append(label)
         }
@@ -180,12 +180,12 @@ import UIKit
     }
     
     func addIndividualItemConstraints(segments: [UIView], mainView: UIView, padding: CGFloat) {
-        let constraints = mainView.constraints()
+        let constraints = mainView.constraints
         
-        for (index, button) in enumerate(segments) {
-            var topConstraint = NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: mainView, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0)
+        for (index, button) in segments.enumerate() {
+            let topConstraint = NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: mainView, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0)
             
-            var bottomConstraint = NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: mainView, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0)
+            let bottomConstraint = NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: mainView, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0)
             
             var rightConstraint: NSLayoutConstraint!
             
@@ -206,7 +206,7 @@ import UIKit
                 
                 let firstItem = segments[0]
                 
-                var widthConstraint = NSLayoutConstraint(item: button, attribute: .Width, relatedBy: NSLayoutRelation.Equal, toItem: firstItem, attribute: .Width, multiplier: 1.0  , constant: 0)
+                let widthConstraint = NSLayoutConstraint(item: button, attribute: .Width, relatedBy: NSLayoutRelation.Equal, toItem: firstItem, attribute: .Width, multiplier: 1.0  , constant: 0)
                 
                 mainView.addConstraint(widthConstraint)
             }

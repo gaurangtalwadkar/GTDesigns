@@ -35,7 +35,7 @@ import UIKit
         CGContextSetFillColorWithColor(context, borderColor.CGColor)
         CGContextFillRect(context, rect)
         
-        var patternSize: CGSize = CGSizeMake(size, size)
+        let patternSize: CGSize = CGSizeMake(size, size)
     
         UIGraphicsBeginImageContextWithOptions(patternSize, true, 0.0)
         let drawingContext = UIGraphicsGetCurrentContext()

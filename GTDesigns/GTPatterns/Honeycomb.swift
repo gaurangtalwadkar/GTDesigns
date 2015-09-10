@@ -22,8 +22,8 @@ import UIKit
         }
     }
     
-    @IBInspectable var backgroundFillColor: UIColor = UIColor(white: 0.1, alpha: 1.0)
-    @IBInspectable var borderColor: UIColor = UIColor(white: 0.6, alpha: 1.0)
+    @IBInspectable var backgroundFillColor: UIColor = UIColor.darkGrayColor()
+    @IBInspectable var borderColor: UIColor = UIColor.yellowColor()
     
     override func drawRect(rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()

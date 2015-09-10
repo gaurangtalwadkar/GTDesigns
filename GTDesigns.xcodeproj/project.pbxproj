@@ -184,6 +184,7 @@
 		862AD7191B453CFB000FB53C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Droid Master G Entertainment";
 				TargetAttributes = {
