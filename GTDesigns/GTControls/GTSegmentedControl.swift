@@ -145,7 +145,7 @@ import UIKit
     }
     
     func displayNewSelectedIndex() {
-        for (index, item) in labels.enumerate() {
+        for (_, item) in labels.enumerate() {
             item.textColor = unselectedLabelColor
         }
         
@@ -180,8 +180,6 @@ import UIKit
     }
     
     func addIndividualItemConstraints(segments: [UIView], mainView: UIView, padding: CGFloat) {
-        let constraints = mainView.constraints
-        
         for (index, button) in segments.enumerate() {
             let topConstraint = NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: mainView, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0)
             
