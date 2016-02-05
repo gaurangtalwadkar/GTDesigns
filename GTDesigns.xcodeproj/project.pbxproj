@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45E6981D1C637154009FCFF8 /* GTPaginationControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6981C1C637154009FCFF8 /* GTPaginationControl.swift */; };
+		45E6981F1C63735E009FCFF8 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6981E1C63735E009FCFF8 /* Square.swift */; };
 		8618BE431B56726300CDA356 /* GTSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618BE421B56726300CDA356 /* GTSegmentedControl.swift */; };
 		862AD7271B453CFB000FB53C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862AD7261B453CFB000FB53C /* AppDelegate.swift */; };
 		862AD7291B453CFB000FB53C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862AD7281B453CFB000FB53C /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45E6981C1C637154009FCFF8 /* GTPaginationControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GTPaginationControl.swift; path = GTControls/GTPaginationControl.swift; sourceTree = "<group>"; };
+		45E6981E1C63735E009FCFF8 /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Square.swift; path = GTPatterns/Square.swift; sourceTree = "<group>"; };
 		8618BE421B56726300CDA356 /* GTSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GTSegmentedControl.swift; path = GTControls/GTSegmentedControl.swift; sourceTree = "<group>"; };
 		862AD7211B453CFB000FB53C /* GTDesigns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTDesigns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		862AD7251B453CFB000FB53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				8618BE421B56726300CDA356 /* GTSegmentedControl.swift */,
+				45E6981C1C637154009FCFF8 /* GTPaginationControl.swift */,
 			);
 			name = GTControls;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				862AD7481B454128000FB53C /* Honeycomb.swift */,
 				862AD74A1B4542D3000FB53C /* Bricks.swift */,
 				86D89FA61B457B8B00B8A509 /* Dots.swift */,
+				45E6981E1C63735E009FCFF8 /* Square.swift */,
 			);
 			name = GTPatterns;
 			sourceTree = "<group>";
@@ -241,11 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E6981F1C63735E009FCFF8 /* Square.swift in Sources */,
 				862AD7291B453CFB000FB53C /* ViewController.swift in Sources */,
 				8618BE431B56726300CDA356 /* GTSegmentedControl.swift in Sources */,
 				862AD74B1B4542D3000FB53C /* Bricks.swift in Sources */,
 				86D89FA71B457B8B00B8A509 /* Dots.swift in Sources */,
 				862AD7271B453CFB000FB53C /* AppDelegate.swift in Sources */,
+				45E6981D1C637154009FCFF8 /* GTPaginationControl.swift in Sources */,
 				862AD7491B454128000FB53C /* Honeycomb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
