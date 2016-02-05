@@ -17,3 +17,6 @@ Implementation of customizable patterns and controls using IBDesignable and IBIn
 
 ###Dots
 ![alt tag](https://www.dropbox.com/s/dfov8dev2gckvwy/Dots.png?dl=1)
+
+###Square
+![alt tag](https://www.dropbox.com/s/cagno25ar2z32rk/Square.png?dl=1)
