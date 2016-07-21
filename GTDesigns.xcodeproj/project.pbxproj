@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		45E6981F1C63735E009FCFF8 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6981E1C63735E009FCFF8 /* Square.swift */; };
 		4805AC2D1CABB00000E9205F /* Circles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805AC2C1CABB00000E9205F /* Circles.swift */; };
-		8618BE431B56726300CDA356 /* GTSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618BE421B56726300CDA356 /* GTSegmentedControl.swift */; };
+		4832F4151D414DCA0067CF3B /* GTStepSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4832F4131D414DCA0067CF3B /* GTStepSlider.swift */; };
+		4832F4161D414DCA0067CF3B /* GTSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4832F4141D414DCA0067CF3B /* GTSegmentedControl.swift */; };
 		862AD7271B453CFB000FB53C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862AD7261B453CFB000FB53C /* AppDelegate.swift */; };
 		862AD7291B453CFB000FB53C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862AD7281B453CFB000FB53C /* ViewController.swift */; };
 		862AD72C1B453CFB000FB53C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862AD72A1B453CFB000FB53C /* Main.storyboard */; };
@@ -34,7 +35,8 @@
 /* Begin PBXFileReference section */
 		45E6981E1C63735E009FCFF8 /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Square.swift; path = GTPatterns/Square.swift; sourceTree = "<group>"; };
 		4805AC2C1CABB00000E9205F /* Circles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Circles.swift; path = GTPatterns/Circles.swift; sourceTree = "<group>"; };
-		8618BE421B56726300CDA356 /* GTSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GTSegmentedControl.swift; path = GTControls/GTSegmentedControl.swift; sourceTree = "<group>"; };
+		4832F4131D414DCA0067CF3B /* GTStepSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTStepSlider.swift; sourceTree = "<group>"; };
+		4832F4141D414DCA0067CF3B /* GTSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTSegmentedControl.swift; sourceTree = "<group>"; };
 		862AD7211B453CFB000FB53C /* GTDesigns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTDesigns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		862AD7251B453CFB000FB53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		862AD7261B453CFB000FB53C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,9 +131,10 @@
 		862AD7461B453F17000FB53C /* GTControls */ = {
 			isa = PBXGroup;
 			children = (
-				8618BE421B56726300CDA356 /* GTSegmentedControl.swift */,
+				4832F4131D414DCA0067CF3B /* GTStepSlider.swift */,
+				4832F4141D414DCA0067CF3B /* GTSegmentedControl.swift */,
 			);
-			name = GTControls;
+			path = GTControls;
 			sourceTree = "<group>";
 		};
 		862AD7471B453F21000FB53C /* GTPatterns */ = {
@@ -249,12 +252,13 @@
 			files = (
 				45E6981F1C63735E009FCFF8 /* Square.swift in Sources */,
 				862AD7291B453CFB000FB53C /* ViewController.swift in Sources */,
-				8618BE431B56726300CDA356 /* GTSegmentedControl.swift in Sources */,
 				862AD74B1B4542D3000FB53C /* Bricks.swift in Sources */,
 				86D89FA71B457B8B00B8A509 /* Dots.swift in Sources */,
+				4832F4151D414DCA0067CF3B /* GTStepSlider.swift in Sources */,
 				862AD7271B453CFB000FB53C /* AppDelegate.swift in Sources */,
 				4805AC2D1CABB00000E9205F /* Circles.swift in Sources */,
 				862AD7491B454128000FB53C /* Honeycomb.swift in Sources */,
+				4832F4161D414DCA0067CF3B /* GTSegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
